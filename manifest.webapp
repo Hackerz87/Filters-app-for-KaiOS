@@ -1,0 +1,30 @@
+{
+  "name": "Filter",
+  "description": "Filter is a powerful photo editing app with the most aesthetic photo filters. It offers a handpicked selection of foto filters for pictures. Make your photos stand out with a variety of vintage and trendy effects!",
+  "subtitle": "Powerful Photo Editing App",
+  "launch_path": "/index.html",
+  "version": "1.0.4",
+  "type":"web",
+  "fullscreen": "true",
+  "theme_color": "#D5F6FF",
+  "icons": {
+    "56": "/icons/filter_56.png",
+    "112": "/icons/filter_112.png"
+  },
+  "developer": {
+    "name": "Valeriy Skachko",
+    "url": "https://valesk.com"
+  },
+  "locales": {
+  "en-US": {
+	"name": "Filter",
+	"description": "Filter is a powerful photo editing app with the most aesthetic photo filters. It offers a handpicked selection of foto filters for pictures. Make your photos stand out with a variety of vintage and trendy effects!",
+	"subtitle": "Powerful Photo Editing App"
+  }
+  },
+  "default_locale": "en-US",
+  "permissions": {
+  "mobiledata": {},
+  "wifidata": {}
+  }
+}

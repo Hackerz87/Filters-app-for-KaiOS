@@ -1,0 +1,296 @@
+@font-face {
+      font-family: "Roboto-Regular";
+      src: url("Roboto-Regular.ttf");
+}
+
+* {
+ font-family: "Roboto-Regular";
+ font-size: 16px;
+}
+
+body {
+  background-image: url("port.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0;
+  padding:0;
+}
+
+#start {
+  position: fixed;
+  left:0;
+  top:0; 
+  width: 240px;  
+  height: 320px;
+  background-image: url("port2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0;
+  padding:0;
+}
+
+
+.items:focus {
+	background-color: #FFFF00;
+}
+
+.mtable {
+  position: fixed;
+  text-align: center;
+  width: 240px;
+  table-layout: fixed;
+  margin:0;
+  top: 200px;
+}
+
+.inbut {
+  width: 80%;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.65);
+  font-size: 20px;
+  border: 2px solid #D5F6FF;
+  border-radius: 5px;
+  outline: none;
+}
+
+#canvas_small {
+	position: fixed;
+	left:0;
+	top:0;
+	z-index: -10;
+}
+
+#canvas_big {
+	position: fixed;
+	left:320px;
+	top:0px;
+	z-index: -100;
+}
+
+#right {
+	position: fixed;
+	top: 300px;
+	left: 220px;
+	width: 20px;
+	transform: scaleX(-1);
+}
+
+#download {
+	position: fixed;
+	top: 300px;
+	left: 0px;
+	width: 20px;
+}
+
+#rightMenu {
+	position: fixed;
+	top: 20px;
+	left: 240px;
+	bottom: 20px;
+	border: 3px solid #C8A2C8;
+	border-radius: 10px 0 0 10px;
+	border-right: none;
+	padding: 3px;
+	width: 200px;
+	background: rgba(213, 246, 255, 0.8);
+}
+
+.moveleft {
+	animation-name: moveleft_anim;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes moveleft_anim {
+    100% { left: 40px;}
+}
+
+.moveright {
+	animation-name: moveright_anim;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes moveright_anim {
+    100% { left: 240px;}
+}
+
+#filterList {
+  overflow-y: hidden;
+  position: fixed;
+  width: 200px;
+  height: 240px;
+  left: 240px;
+  text-align: center;
+}
+
+.smallbutton {
+	width: 90%;
+	margin: 3px;
+	color: #000000;
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 14px;
+	border: 2px solid #D5F6FF;
+	border-radius: 5px;
+	outline: none;
+}
+
+.smallbutton2 {
+	width: 90%;
+	color: #000000;
+	background: rgba(255, 255, 255, 0.65);
+	font-size: 14px;
+	border: 2px solid #D5F6FF;
+	border-radius: 5px;
+	outline: none;
+}
+
+#my_span {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+input[type="text"] { 
+width: 100%;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+background: rgba(255, 255, 255, 0.65);
+background-image: url("lr.svg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+border: 2px solid #D5F6FF;
+border-radius: 5px;
+}
+
+input[type="text"]:focus { 
+width: 100%;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+background: rgba(255, 255, 0, 1);
+background-image: url("lr.svg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+border: 2px solid #D5F6FF;
+border-radius: 5px;
+}
+
+
+input[type="checkbox"]:focus { 
+box-shadow: 0 0 0 2px #FFFF00;
+}
+
+.table_u {
+width: 96%;
+table-layout: fixed;
+}
+
+.td60 {
+width: 60%;
+}
+
+.td40 {
+width: 40%;
+}
+
+.smalldiv {
+font-size: 11px;
+font-weight: bold;
+}
+
+.table_d {
+position: sticky;
+width: 200px;
+top: 160px;
+padding:0;
+margin:0;
+text-align: center;
+}
+
+#wait {
+	position: fixed;
+	top: 98px;
+	left: 58px;
+	width: 120px;
+	height: 120px;
+	border: 2px solid #FFFF00;
+	border-radius: 5px;
+	background-color: #000000;
+	color: #FFFF00;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	opacity: 0;
+	animation-name: op_anim;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+    animation-duration: 1s;
+	z-index: 99;
+}
+
+
+@keyframes op_anim {
+    100% { opacity: 1; }
+}
+
+header { 
+  display:block;
+  position: fixed;
+  height: 17px;
+  font-size: 14px;
+  font-weight: bold;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.fkey {
+	font-size: 14px;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	height: 18px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+	border-top: 1px solid #000000;
+
+}
+
+.footertable {
+  width: 100%;
+
+}
+
+.footerth {
+  width: 33%;
+  padding:0;
+  margin:0;
+}
+
+.jus {
+ text-align: justify;
+ margin-right: 5px;
+ margin-left: 5px;
+ color: #000000;
+}
+
+.pcenter {
+ text-align: center;
+ color: #000000;
+ font-size: 18px;
+}
